@@ -11,7 +11,7 @@ Documentation of this repository is automatically done with Quarto using GitHub 
 
 Based on "How to Run PostgreSQL and pgAdmin Using Docker" at https://towardsdatascience.com/how-to-run-postgresql-and-pgadmin-using-docker-3a6a8ae918b5
 
-Based on "Using the Web’s Bluetooth API" at https://medium.com/classy-code-blog/svelte-web-ble-9d765ff851ea
+Based on "Using the Web’s Bluetooth API" at https://medium.com/classy-code-blog/svelte-web-ble-9d765ff851ea and https://github.com/classycodeoss/web-ble-api
 
 Create yarn.lock file as follows:
 
