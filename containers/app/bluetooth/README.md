@@ -8,7 +8,6 @@ Development Resources for the CC2541:
 
 [Data Sheet (Sensor Tag)](https://www.ti.com/tool/CC2541-SENSORTAG-IBEACON-RD?utm_source=google&utm_medium=cpc&utm_campaign=sys-ind-null-refdesdynamic-cpc-evm-google-de&utm_content=refdesdynamic&ds_k=DYNAMIC+SEARCH+ADS&DCM=yes&gclid=CjwKCAjwo8-SBhAlEiwAopc9WzUjtCRFNklXLMBLhsE3Xy3lg4vNWoGeqX3IFEyn5ERhZY9aUtQr7hoC3PEQAvD_BwE&gclsrc=aw.ds)
 
-
 [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API)
 
 [Associated Blog Post](https://medium.com/p/9d765ff851ea)
