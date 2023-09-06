@@ -1,6 +1,6 @@
 <script lang="ts">
   import { UUIDs } from '$lib/constants/ble-uuids';
-  import { SwitchState } from '$lib/models/switch-state.enum';
+  import { SwitchState } from '$lib/models/switch-state-enum';
   import type { TemperatureData } from '$lib/models/temperature-data.model';
 
   import { onMount } from 'svelte';

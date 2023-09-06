@@ -1,4 +1,4 @@
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 
 export enum Constants {
 	Interval = 100 / 10, // Value is in ms / 10
