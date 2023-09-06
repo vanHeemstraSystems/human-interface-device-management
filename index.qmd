@@ -1,5 +1,5 @@
 ---
-title: "Map Management"
+title: "Bluetooth Management"
 ---
 
 This is a Quarto website.
