@@ -6,7 +6,7 @@
 # Using this will ignore remaining config in this file
 # externalConfig: https://example.com/server-luci/config.yaml
 
-title: "Financial Management"
+title: "Bluetooth Management"
 subtitle: "Dashboard"
 # documentTitle: "Welcome" # Customize the browser tab text
 logo: "assets/logo.png"
@@ -118,11 +118,11 @@ services:
   - name: "Apps"
     icon: "fas fa-window-restore"
     items:
-      - name: "Actual"
-        logo: "assets/tools/actual.png"
-        subtitle: "A (personal) finance management system."
+      - name: "Bluetooth"
+        logo: "assets/tools/bluetooth.png"
+        subtitle: "A near range connection."
         tag: "app"
-        url: "/actual"
+        url: "/bluetooth"
         target: "_blank" # optional html a tag target attribute
 #      - name: "Netflix"
 #        logo: "assets/tools/netflix.png"
