@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Map Management"
+  title: "Bluetooth Management"
   navbar:
     left:
       - href: index.qmd
