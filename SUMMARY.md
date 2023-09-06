@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Map - Management](README.md)
+* [Bluetooth Management](README.md)
