@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Bluetooth Management"
+  title: "Human Interface Device Management"
   navbar:
     left:
       - href: index.qmd
