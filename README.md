@@ -11,7 +11,7 @@ Documentation of this repository is automatically done with Quarto using GitHub 
 
 Based on "How to Run PostgreSQL and pgAdmin Using Docker" at https://towardsdatascience.com/how-to-run-postgresql-and-pgadmin-using-docker-3a6a8ae918b5
 
-Based on "node-hdi" at https://github.com/node-hid/node-hid
+Based on "node-hid" at https://github.com/node-hid/node-hid
 
 Create yarn.lock file as follows:
 
