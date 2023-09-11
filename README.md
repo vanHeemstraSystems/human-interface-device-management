@@ -13,6 +13,8 @@ Based on "How to Run PostgreSQL and pgAdmin Using Docker" at https://towardsdata
 
 Based on "node-hid" at https://github.com/node-hid/node-hid
 
+Based on "SvelteKit" at https://learn.svelte.dev/tutorial/introducing-sveltekit
+
 Create yarn.lock file as follows:
 
 ```
