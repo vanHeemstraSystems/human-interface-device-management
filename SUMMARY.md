@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Bluetooth Management](README.md)
+* [Human Interface Device Management](README.md)
