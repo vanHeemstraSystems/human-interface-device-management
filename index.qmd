@@ -1,5 +1,5 @@
 ---
-title: "Bluetooth Management"
+title: "Human Interface Device Management"
 ---
 
 This is a Quarto website.
