@@ -1,1 +1,1 @@
-Sitemap: https://github.com/vanHeemstraSystems/bluetooth-management/sitemap.xml
+Sitemap: https://github.com/vanHeemstraSystems/human-interface-device-management/sitemap.xml
