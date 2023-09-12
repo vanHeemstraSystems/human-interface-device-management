@@ -87,8 +87,30 @@
 					}}
 				>
 					<input type="hidden" name="id" value={todo.id} />
+					<input
+						type="checkbox"
+						checked={todo.done}
+						on:change={async (e) => {
+							const done = e.currentTarget.checked;
+							await fetch(`/todo/${todo.id}`, {
+								method: 'PUT',
+								body: JSON.stringify({ done }),
+								headers: {
+									'Content-Type': 'application/json'
+								}
+							});
+						}}
+					/>
 					<span>{todo.description}</span>
-					<button aria-label="Mark as complete" />
+					<button 
+						aria-label="Mark as complete"
+						on:click={async (e) => {
+							await fetch(`/todo/${todo.id}`, {
+								method: 'DELETE'
+							});
+							data.todos = data.todos.filter((t) => t !== todo);
+						}}
+					/>
 				</form>
 			</li>
 		{/each}
