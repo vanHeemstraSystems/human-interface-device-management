@@ -15,6 +15,10 @@
 		blog
 	</a>	
 
+	<a href="/expected">page with expected error</a>
+	
+	<a href="/unexpected">page with unexpected error</a>	
+
 	{#if $navigating}
 		navigating to {$navigating.to.url.pathname}
 	{/if}
