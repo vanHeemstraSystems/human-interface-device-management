@@ -27,7 +27,7 @@
 		<p class="error">{form.error}</p>
 	{/if}
 
-	<!-- <form method="POST" 
+	<!-- form method="POST" 
 	    action="?/create"
 		use:enhance={() => {
 			creating = true;
@@ -36,7 +36,7 @@
 				creating = false;
 			};
 		}}
-	> -->
+	-->
 		<label>
 			add a todo:
 			<input
@@ -71,12 +71,12 @@
 				}}
 			/>
 		</label>
-	<!-- </form> -->
+	<!-- /form -->
 
 	<ul class="todos">
 		{#each data.todos as todo (todo.id)}
 			<li in:fly={{ y: 20 }} out:slide>
-				<form method="POST" 
+				<!-- form method="POST" 
 					action="?/delete" 
 					use:enhance={() => {
 					deleting = [...deleting, todo.id];
@@ -85,8 +85,9 @@
 							deleting = deleting.filter((id) => id !== todo.id);
 						};
 					}}
-				>
-					<input type="hidden" name="id" value={todo.id} />
+				-->
+				<label>
+					<!-- input type="hidden" name="id" value={todo.id} /-->
 					<input
 						type="checkbox"
 						checked={todo.done}
@@ -111,7 +112,7 @@
 							data.todos = data.todos.filter((t) => t !== todo);
 						}}
 					/>
-				</form>
+				<!-- /form -->
 			</li>
 		{/each}
 	</ul>

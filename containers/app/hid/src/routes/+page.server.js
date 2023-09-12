@@ -12,14 +12,15 @@ import { fail } from '@sveltejs/kit';
 import * as database from '$lib/server/database.js';
 
 export function load({ cookies }) {
-	const id = cookies.get('userid');
+	let userid = cookies.get('userid');
 
-	if (!id) {
-		cookies.set('userid', crypto.randomUUID(), { path: '/' });
+	if (!userid) {
+		userid = crypto.randomUUID();
+		cookies.set('userid', userid, { path: '/' });
 	}
 
 	return {
-		todos: database.getTodos(id) ?? []
+		todos: database.getTodos(userid)
 	};
 }
 
