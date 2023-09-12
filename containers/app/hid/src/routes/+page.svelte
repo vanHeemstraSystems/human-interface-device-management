@@ -27,7 +27,7 @@
 		<p class="error">{form.error}</p>
 	{/if}
 
-	<form method="POST" 
+	<!-- <form method="POST" 
 	    action="?/create"
 		use:enhance={() => {
 			creating = true;
@@ -36,18 +36,42 @@
 				creating = false;
 			};
 		}}
-	>
+	> -->
 		<label>
 			add a todo:
 			<input
+				type="text"
 				disabled={creating}
 				name="description"
 				value={form?.description ?? ''}
 				autocomplete="off"
 				required
+				on:keydown={async (e) => {
+					if (e.key === 'Enter') {
+						const input = e.currentTarget;
+						const description = input.value;
+						
+						const response = await fetch('/todo', {
+							method: 'POST',
+							body: JSON.stringify({ description }),
+							headers: {
+								'Content-Type': 'application/json'
+							}
+						});
+
+						const { id } = await response.json();
+
+						data.todos = [...data.todos, {
+							id,
+							description
+						}];
+
+						input.value = '';
+					}
+				}}
 			/>
 		</label>
-	</form>
+	<!-- </form> -->
 
 	<ul class="todos">
 		{#each data.todos as todo (todo.id)}

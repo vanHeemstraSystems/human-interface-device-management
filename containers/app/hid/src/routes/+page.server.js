@@ -9,7 +9,7 @@
 // }
 
 import { fail } from '@sveltejs/kit';
-import * as db from '$lib/server/database.js';
+import * as database from '$lib/server/database.js';
 
 export function load({ cookies }) {
 	const id = cookies.get('userid');
@@ -19,7 +19,7 @@ export function load({ cookies }) {
 	}
 
 	return {
-		todos: db.getTodos(id) ?? []
+		todos: database.getTodos(id) ?? []
 	};
 }
 
@@ -29,7 +29,7 @@ export const actions = {
 		const data = await request.formData();
 
 		try {
-			db.createTodo(cookies.get('userid'), data.get('description'));
+			database.createTodo(cookies.get('userid'), data.get('description'));
 		} catch (error) {
 			return fail(422, {
 				description: data.get('description'),
@@ -41,6 +41,6 @@ export const actions = {
 	delete: async ({ cookies, request }) => {
 		await new Promise((fulfil) => setTimeout(fulfil, 1000)); // Deliberate delay for testing, remove in production!!
 		const data = await request.formData();
-		db.deleteTodo(cookies.get('userid'), data.get('id'));
+		database.deleteTodo(cookies.get('userid'), data.get('id'));
 	}
 };
