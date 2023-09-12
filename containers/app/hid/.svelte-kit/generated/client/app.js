@@ -11,18 +11,22 @@ export const nodes = [
 	() => import('./nodes/7'),
 	() => import('./nodes/8'),
 	() => import('./nodes/9'),
-	() => import('./nodes/10')
+	() => import('./nodes/10'),
+	() => import('./nodes/11'),
+	() => import('./nodes/12')
 ];
 
 export const server_loads = [0,2];
 
 export const dictionary = {
 		"/": [~5],
-		"/about": [6],
-		"/blog": [7,[2]],
-		"/blog/[slug]": [~8,[2,3]],
-		"/expected": [~9,[],[4]],
-		"/unexpected": [~10]
+		"/about": [7],
+		"/a": [~6],
+		"/blog": [9,[2]],
+		"/blog/[slug]": [~10,[2,3]],
+		"/b": [8],
+		"/expected": [~11,[],[4]],
+		"/unexpected": [~12]
 	};
 
 export const hooks = {
