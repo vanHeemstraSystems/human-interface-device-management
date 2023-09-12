@@ -127,6 +127,8 @@
 		<p>You rolled a {number}</p>
 	{/if}
 
+	<a href="/ping">ping</a>
+
 </div>
 
 <style>
