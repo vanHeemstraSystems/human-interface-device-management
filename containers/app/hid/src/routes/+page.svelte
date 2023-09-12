@@ -6,6 +6,12 @@
 	export let form;
 	let creating = false;
 	let deleting = [];
+	/** @type {number} */
+	let number;
+	async function roll() {
+		const response = await fetch('/roll');
+		number = await response.json();
+	}
 </script>
 
 <h1>home</h1>
@@ -66,6 +72,12 @@
 
 	{#if creating}
 		<span class="saving">saving...</span>
+	{/if}
+
+	<button on:click={roll} style="height:5em;width:20em;border:2px solid black;background:none;opacity:1;color:black;">Roll the dice</button>
+
+	{#if number !== undefined}
+		<p>You rolled a {number}</p>
 	{/if}
 
 </div>
