@@ -1,5 +1,6 @@
 <script>
 	export let data;
+	export let form;
 	import { message } from '$lib/message.js';
 </script>
 
@@ -12,12 +13,18 @@
 <div class="centered">
 	<h1>todos</h1>
 
+	{#if form?.error}
+		<p class="error">{form.error}</p>
+	{/if}
+
 	<form method="POST" action="?/create">
 		<label>
 			add a todo:
 			<input
 				name="description"
+				value={form?.description ?? ''}
 				autocomplete="off"
+				required
 			/>
 		</label>
 	</form>
